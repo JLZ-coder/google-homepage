@@ -9,21 +9,42 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                font-size: 14px;
+                font-family: arial,sans-serif;
             }
 
             .nav_bar {
+                padding: 6px;
+                height: 60px;
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
+            }
+
+            .nav_bar_left a {
+                margin-left: 15px;
+                margin-right: 5px;
+            }
+
+            .nav_bar_right {
+                display: flex;
+                align-items: center;
+            }
+
+            .nav_bar_right a {
+                margin-left: 5px;
+                margin-right: 5px;
             }
 
             .div_main {
                 align-self: center;
-                width: 25%;
+                width: 600px;
                 margin-bottom: 20%;
-                flex-shrink: 0;
             }
 
             .div_form {
+                margin: 10px;
+                padding: 5px;
             }
 
             .div_logo {
@@ -38,18 +59,35 @@
             .div_form_textinput {
                 display: flex;
                 justify-content: center;
+                border: 1px solid #dfe1e5;
+                border-radius: 24px;
+            }
+
+            .div_form_textinput img{
+                margin: 10px;
             }
 
             .div_form_textinput input {
                 width: 100%;
+                height: 35px;
+                border: none;
             }
 
             .div_form_buttons{
+                margin: 10px;
+                padding: 5px;
                 display: flex;
                 justify-content: space-evenly;
             }
 
             .footer {
+                background-color: #f2f2f2;
+                padding: 15px;
+            }
+
+            .footer a {
+                margin-left: 5px;
+                margin-right: 5px;
             }
 
         </style>
@@ -66,7 +104,7 @@
             <div class="nav_bar_right">
                 <a href="#">Gmail</a>
                 <a href="#">Images</a>
-                <a href="#">Icon</a>
+                <a href="#"><img src="icons/apps_black_24dp.svg"></a>
                 <a href="#">Sign in</a>
             </div>
         </nav>
@@ -79,7 +117,9 @@
             <div class="div_form">
                 <form>
                     <div class="div_form_textinput">
+                        <img src="icons/search_black_24dp.svg">
                         <input type="text">
+                        <img src="icons/mic_black_24dp.svg">
                     </div>
                     <div class="div_form_buttons">
                         <input type="submit" value="Foogle Search">
