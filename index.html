@@ -33,13 +33,13 @@
 
             .nav_bar_right a {
                 margin-left: 5px;
-                margin-right: 5px;
+                margin-right: 15px;
             }
 
             .div_main {
                 align-self: center;
                 width: 600px;
-                margin-bottom: 20%;
+                margin-bottom: 15%;
             }
 
             .div_form {
@@ -64,7 +64,7 @@
             }
 
             .div_form_textinput img{
-                margin: 10px;
+                margin: 0px 10px 0px 10px;
             }
 
             .div_form_textinput input {
@@ -77,17 +77,59 @@
                 margin: 10px;
                 padding: 5px;
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: center;
             }
 
+            .div_form_buttons input{
+                height: 3em;
+                margin: 10px;
+                padding: 5px 15px 5px 15px;
+                border-radius: 4px;
+                background: linear-gradient(#f8f8f8,#f1f1f1);
+                color: #5f6368;
+                border: 1px solid #f2f2f2;
+            } 
+
+            .div_form_buttons input:hover{
+                color: black;
+                box-shadow: 0 2px 2px rgb(0 0 0 / 10%);
+            } 
+
             .footer {
+                display: flex;
                 background-color: #f2f2f2;
                 padding: 15px;
+                justify-content: space-between;
             }
 
             .footer a {
                 margin-left: 5px;
                 margin-right: 5px;
+                color: #5f6368;
+            }
+
+            .footer_left {
+
+            }
+
+            .footer_right {
+            
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            #sign_in_btn {
+                color: white;
+                padding : 7px 12px 7px 12px;
+                border-radius: 5px;
+                background-color: #4285f4;
             }
 
         </style>
@@ -105,7 +147,7 @@
                 <a href="#">Gmail</a>
                 <a href="#">Images</a>
                 <a href="#"><img src="icons/apps_black_24dp.svg"></a>
-                <a href="#">Sign in</a>
+                <a id="sign_in_btn" href="#">Sign in</a>
             </div>
         </nav>
 
@@ -115,7 +157,7 @@
             </div>
             
             <div class="div_form">
-                <form>
+                <form action="#">
                     <div class="div_form_textinput">
                         <img src="icons/search_black_24dp.svg">
                         <input type="text">
@@ -130,9 +172,17 @@
         </div>
         
         <footer class="footer">
-            <a href="#">Advertising</a>
-            <a href="#">Business</a>
-            <a href="#">How Search works</a>
+            <div class="footer_left">
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search works</a>
+            </div>
+
+            <div class="footer_right">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </div>
         </footer>
         
     </body>
