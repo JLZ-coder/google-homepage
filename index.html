@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+            body {
+                margin: 0px;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .nav_bar {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .div_main {
+                align-self: center;
+                width: 25%;
+                margin-bottom: 20%;
+                flex-shrink: 0;
+            }
+
+            .div_form {
+            }
+
+            .div_logo {
+                display: flex;
+                justify-content: center;
+            }
+
+            .div_logo img {
+                height: 100px;
+            }
+
+            .div_form_textinput {
+                display: flex;
+                justify-content: center;
+            }
+
+            .div_form_textinput input {
+                width: 100%;
+            }
+
+            .div_form_buttons{
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .footer {
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <nav class="nav_bar">
+            <div class="nav_bar_left">
+                <a href="#">About</a>
+                <a href="#">Store</a>
+            </div>
+            
+            <div class="nav_bar_right">
+                <a href="#">Gmail</a>
+                <a href="#">Images</a>
+                <a href="#">Icon</a>
+                <a href="#">Sign in</a>
+            </div>
+        </nav>
+
+        <div class="div_main">
+            <div class="div_logo">
+                <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/284f0cdc998be7e4751e29e8458323ad5d320303/foundations/the_front_end/project_html_css/imgs/00.png" alt="Foogle logo">
+            </div>
+            
+            <div class="div_form">
+                <form>
+                    <div class="div_form_textinput">
+                        <input type="text">
+                    </div>
+                    <div class="div_form_buttons">
+                        <input type="submit" value="Foogle Search">
+                        <input type="submit" value="I'm Feeling Lucky">    
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <a href="#">Advertising</a>
+            <a href="#">Business</a>
+            <a href="#">How Search works</a>
+        </footer>
+        
+    </body>
+</html>
