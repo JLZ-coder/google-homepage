@@ -5,7 +5,7 @@
         <style>
             body {
                 margin: 0px;
-                height: 400vh;
+                min-height: 100vh;
                 display: flex;
                 flex-direction: column;
                 font-size: 14px;
@@ -78,10 +78,10 @@
             nav {
                 padding-top: 20px;
                 border-bottom: 1px solid #ebebeb;
+                padding-left: 150px;
             }
 
             nav .nav_bar {
-                padding-left: 150px;
                 width: 660px;
                 display: flex;
                 justify-content: space-between;
@@ -125,10 +125,36 @@
             }
 
             .div_main {
-                align-self: center;
+                margin-left: 165px;
                 width: 600px;
-                margin-bottom: 15%;
             }
+
+            .div_main .search_title {
+                color: #5f6368;
+            }
+
+            .div_main .search_result {
+                margin-bottom: 30px;
+            }
+
+            .div_main .search_result .res_title {
+                text-decoration: none;
+            }
+
+            .div_main .search_result .res_title h3{
+                color: #1a0dab;
+                margin: 5px 0px 5px 0px;
+                font-size: 20px;
+            }
+
+            .div_main .search_result .res_title h3:hover{
+                text-decoration: underline;
+            }
+
+            .div_main .search_result .res_desc{
+                margin: 0px;
+                color: #5f6368;
+            }   
 
             .div_form {
                 margin: 10px;
@@ -256,11 +282,85 @@
             
             <p class="search_title">Aproximately no real results (sorry)</p>
             
-            <div class=search_result>
-                <cite class="url">https://sample-results.com</cite>
-                <h3>Sample-result</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="search_result">
+                <a href="#" class="res_title">
+                    <cite>https://sample-results.com</cite>
+                    <h3>Sample-result</h3>
+                </a>
+                <p class="res_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
+
+            <div class="search_result">
+                <a href="#" class="res_title">
+                    <cite>https://sample-results.com</cite>
+                    <h3>Sample-result</h3>
+                </a>
+                <p class="res_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <div class="search_result">
+                <a href="#" class="res_title">
+                    <cite>https://sample-results.com</cite>
+                    <h3>Sample-result</h3>
+                </a>
+                <p class="res_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <div class="search_result">
+                <a href="#" class="res_title">
+                    <cite>https://sample-results.com</cite>
+                    <h3>Sample-result</h3>
+                </a>
+                <p class="res_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <div class="search_result">
+                <a href="#" class="res_title">
+                    <cite>https://sample-results.com</cite>
+                    <h3>Sample-result</h3>
+                </a>
+                <p class="res_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <div class="search_result">
+                <a href="#" class="res_title">
+                    <cite>https://sample-results.com</cite>
+                    <h3>Sample-result</h3>
+                </a>
+                <p class="res_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <div class="search_result">
+                <a href="#" class="res_title">
+                    <cite>https://sample-results.com</cite>
+                    <h3>Sample-result</h3>
+                </a>
+                <p class="res_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <div class="search_result">
+                <a href="#" class="res_title">
+                    <cite>https://sample-results.com</cite>
+                    <h3>Sample-result</h3>
+                </a>
+                <p class="res_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <div class="search_result">
+                <a href="#" class="res_title">
+                    <cite>https://sample-results.com</cite>
+                    <h3>Sample-result</h3>
+                </a>
+                <p class="res_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            
+        </div>
+
+        <div class="related_search">
+
+        </div>
+
+        <div class="nav_list">
             
         </div>
         
