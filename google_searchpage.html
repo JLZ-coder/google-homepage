@@ -5,12 +5,75 @@
         <style>
             body {
                 margin: 0px;
-                height: 100vh;
+                height: 400vh;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 font-size: 14px;
                 font-family: arial,sans-serif;
+            }
+
+            .top_bar {
+                height: 70px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .top_bar_left {
+                display: flex;
+                align-items: center;
+            }
+
+            .top_bar_left a {
+                margin: 0px 30px 0px 30px;
+                display: flex;
+                align-items: center;
+            }
+
+            .top_bar_left a img {
+                height: 40px;
+            }
+
+            .top_bar_left form {
+                display: flex;
+                align-items: center;
+                border: 1px solid #dfe1e5;
+                border-radius: 24px;
+                padding: 0px 15px 0px 15px;
+                box-shadow: 0px 1px 1px rgb(0 0 0 / 10%);
+            }
+
+            .top_bar_left form:hover {
+                box-shadow: 0px 3px 3px rgb(0 0 0 / 10%);
+            }
+
+            .top_bar_left form input[type="text"] {
+                width: 550px;
+                height: 35px;
+                border: none;
+                outline: none;
+            }
+
+            .top_bar_left form button {
+                background: transparent;
+                border: none;
+                cursor:pointer;
+            }
+
+            .top_bar_right {
+                display: flex;
+                align-items: center;
+            }
+
+            .top_bar_right a {
+                padding: 10px 10px 5px 10px;
+                margin: 10px;
+            }
+
+            .top_bar_right a:hover {
+                background-color: #f2f2f2;
+                border-radius: 50%;
             }
 
             .nav_bar {
@@ -24,6 +87,10 @@
             .nav_bar_left a {
                 margin-left: 15px;
                 margin-right: 5px;
+            }
+
+            .nav_bar_left img {
+               height: 40px;
             }
 
             .nav_bar_right {
@@ -47,20 +114,7 @@
                 padding: 5px;
             }
 
-            .div_logo {
-                display: flex;
-                justify-content: center;
-            }
-
-            .div_logo img {
-                height: 100px;
-            }
-
             .div_form_textinput {
-                display: flex;
-                justify-content: center;
-                border: 1px solid #dfe1e5;
-                border-radius: 24px;
             }
 
             .div_form_textinput img{
@@ -137,10 +191,33 @@
 
     <body>
 
+        <div class="top_bar">
+            <div class="top_bar_left">
+                <a href="index.html">
+                    <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/284f0cdc998be7e4751e29e8458323ad5d320303/foundations/the_front_end/project_html_css/imgs/00.png" alt="Foogle logo">
+                </a>
+    
+                <form action="#">
+                        <input type="text">
+                        <button>
+                            <img src="icons/mic_black_24dp.svg" alt="mic">
+                        </button>
+                        <button type="submit">
+                            <img src="icons/search_black_24dp.svg" alt="Foogle search">
+                        </button>
+                </form>
+            </div>
+
+            <div class="top_bar_right">
+                <a href="#"><img src="icons/settings_black_24dp.svg" alt="apps icon"></a>
+                <a href="#"><img src="icons/apps_black_24dp.svg" alt="apps icon"></a>
+            </div>
+
+        </div>
+
         <nav class="nav_bar">
             <div class="nav_bar_left">
-                <a href="#">About</a>
-                <a href="#">Store</a>
+                
             </div>
             
             <div class="nav_bar_right">
@@ -152,9 +229,6 @@
         </nav>
 
         <div class="div_main">
-            <div class="div_logo">
-                <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/284f0cdc998be7e4751e29e8458323ad5d320303/foundations/the_front_end/project_html_css/imgs/00.png" alt="Foogle logo">
-            </div>
             
             <div class="div_form">
                 <form action="#">
